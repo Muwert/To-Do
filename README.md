@@ -1,18 +1,24 @@
-## Getting Started
+## Менеджер задач To-Do
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Веб-приложение для управления задачами (To-Do List), написанное на Java.
 
-## Folder Structure
+## Возможности
 
-The workspace contains two folders by default, where:
+- Добавление задач
+- Просмотр всех задач
+- Отметка задачи как выполненной
+- Удаление задач
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Установка и запуск
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Клонируйте репозиторий:
+`git clone `
+`cd `
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. Запустите
+`java -cp "out" App`
+После этого приложение будет доступно по адресу http://localhost:8080
 
-## Dependency Management
+## Интерфейс
+<img width="1901" height="901" alt="image" src="https://github.com/user-attachments/assets/e5778fdb-5fa5-4b00-82ef-601f8265462b" />
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
