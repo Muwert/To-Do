@@ -13,9 +13,10 @@
 
 1. Клонируйте репозиторий:
 `git clone https://github.com/Muwert/To-Do.git`
+
 `cd To-Do`
 
-2. Запустите
+3. Запустите
 `java -cp "out" App`
 
 После этого приложение будет доступно по адресу http://localhost:8080
