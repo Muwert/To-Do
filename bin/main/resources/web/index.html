@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Менеджер задач</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Менеджер задач</h1>
+        </header>
+
+        <div class="add-task-section">
+            <input type="text" id="taskInput" placeholder="Введите новую задачу" maxlength="100">
+            <button onclick="addTask()">Добавить</button>
+        </div>
+
+        <div class="stats">
+            <span>Всего задач: <span id="totalCount">0</span></span>
+            <span>Выполнено: <span id="completedCount">0</span></span>
+        </div>
+
+        <div class="tasks-section">
+            <h2>Список задач</h2>
+            <div id="tasksList" class="tasks-list"></div>
+        </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

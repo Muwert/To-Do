@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.add-task-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5a6fd8;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.tasks-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background: #f8f9fa;
+    transition: all 0.3s;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+    background: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.task-content {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.task-description {
+    font-size: 16px;
+    color: #333;
+}
+
+.task-item.completed .task-description {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.complete-btn, .delete-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.complete-btn {
+    background: #28a745;
+    color: white;
+}
+
+.complete-btn:hover {
+    background: #218838;
+}
+
+.complete-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid #f5c6cb;
+}
+
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .add-task-section {
+        flex-direction: column;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .task-actions {
+        align-self: flex-end;
+    }
+}
